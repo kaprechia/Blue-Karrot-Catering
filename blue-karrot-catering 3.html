@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Karrot Catering</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header img {
+      max-width: 200px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .service-box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fafafa;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .service-box img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .service-box h3 {
+      margin: 15px;
+      font-size: 20px;
+      color: #003366;
+    }
+
+    .about, .contact, .chef {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      background-color: #003366;
+      color: #fff;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .chef-photo {
+      max-width: 250px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #f2f2f2;
+      color: #666;
+    }
+
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="your-logo-file.png" alt="Blue Karrot Catering Logo" />
+  </header>
+
+  <section class="about">
+    <h2>About the Company</h2>
+    <p>
+      Blue Karrot Catering offers elevated, full-service catering experiences for corporate events, weddings, social gatherings, holidays, and more. With a focus on fresh ingredients and beautiful presentation, we bring thoughtful hospitality to every table.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="IMG_3763.webp" alt="Corporate Catering" />
+        <h3>Corporate</h3>
+      </div>
+      <div class="service-box">
+        <img src="IMG_3761.jpeg" alt="Social Catering" />
+        <h3>Social</h3>
+      </div>
+      <div class="service-box">
+        <img src="wedding-photo.jpg" alt="Wedding Catering" />
+        <h3>Weddings</h3>
+      </div>
+      <div class="service-box">
+        <img src="holiday-photo.jpg" alt="Holiday Catering" />
+        <h3>Holiday</h3>
+      </div>
+      <div class="service-box">
+        <img src="private-chef-photo.jpg" alt="Private Chef Service" />
+        <h3>Private Chef</h3>
+      </div>
+      <div class="service-box">
+        <img src="IMG_3775.jpeg" alt="Meal Prep Service" />
+        <h3>Meal Prep</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Tell Us About Your Event</h2>
+    <form action="mailto:bluekarrotcatering@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email Address" required />
+      <input type="text" name="phone" placeholder="Phone Number" />
+      <textarea name="details" placeholder="Tell us about your event (date, location, number of guests, type of service needed)" rows="5" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="chef">
+    <h2>About the Chef</h2>
+    <p>
+      Our founder and executive chef brings a deep passion for soulful, elevated cuisine and a dedication to hospitality. With years of culinary experience and a love for celebration, she brings warmth and excellence to every event.
+    </p>
+    <img class="chef-photo" src="your-chef-photo.jpg" alt="Chef Photo" />
+  </section>
+
+  <footer>
+    &copy; 2025 Blue Karrot Catering · 
+    <a href="mailto:bluekarrotcatering@gmail.com">bluekarrotcatering@gmail.com</a> · 
+    (404) 941-0717
+  </footer>
+
+</body>
+</html>
